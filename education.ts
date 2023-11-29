@@ -1,5 +1,7 @@
 export interface infoEducation {
     schoolName: string
+    educationLevel: string
+    province: string
 }
 
 export class Educations {

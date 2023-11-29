@@ -1,6 +1,8 @@
 import { Information } from "./informations";
 
 const person = new Information();
+
+// settting for basic infomation
 person.setInfo({
     firstname: "Kanakorn",
     lastname: "Thaiprakhon",
@@ -13,28 +15,35 @@ person.setInfo({
     education: [],
 });
 
+// Add skill
 person.addSkill({
     nameSkill: "JS",
     score: 30,
 });
-
+// add one more skill
 person.addSkill({
     nameSkill: "TS",
     score: 15,
 });
-
+// add parent
 person.addParrent({
-    name: "Puttikorn",
+    firstname: "Puttikorn",
+    lastname: "",
+    work: "",
     role: "ป้าข้างบ้าน"
 });
 
 person.addParrent({
-    name: "Tananop",
+    firstname: "Tananop",
+    lastname: "",
+    work: "",
     role: "หนูท่อ"
 });
 
 person.addEducation({
-    schoolName: "somewhere",
+    schoolName: "SBTVC",
+    educationLevel: "Vocational Certificate",
+    province: "Chonburi",
 });
 
 console.log(person.getInfo());

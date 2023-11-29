@@ -1,5 +1,7 @@
 export interface infoParrent {
-    name: string,
+    firstname: string
+    lastname: string
+    work: string
     role: string
 }
 
